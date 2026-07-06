@@ -1,0 +1,104 @@
+<resources>
+    <!-- Tabs -->
+    <string name="tab_installed">已安装</string>
+    <string name="tab_store">商店</string>
+    <string name="tab_settings">设置</string>
+    <string name="tab_about">关于</string>
+
+    <!-- Onboarding -->
+    <string name="onb_welcome_title">欢迎使用 Suitefish</string>
+    <string name="onb_welcome_body">Suitefish 是一款轻量级的开源应用商店客户端。它连接到在线目录服务器，列出可用的应用，并允许你下载和安装它们。</string>
+
+    <string name="risk_title">使用风险自负</string>
+    <string name="risk_body">你使用 Suitefish 完全由自己承担风险。此应用会从官方应用商店之外的在线来源安装软件。\n\n使用错误的、恶意的或配置不当的自定义服务器可能使你面临漏洞、恶意软件或数据泄露的风险。请仅连接你完全信任的服务器。对于因使用此应用或自定义服务器而导致的任何损害、数据丢失或安全事件，开发者和 Suitefish 均不承担责任。</string>
+
+    <string name="privacy_title">隐私声明</string>
+    <string name="privacy_body_default">Suitefish 当前配置为使用默认服务器。\n\n使用默认服务器时，应用会从 suitefish.com 网站获取其数据（应用列表、图片和下载）。继续即表示你接受 suitefish.com 上发布的数据政策。请在使用应用前查看该政策。\n\n此声明会在每次启动时显示。</string>
+    <string name="privacy_body_custom">Suitefish 当前配置为使用自定义服务器：\n\n%1$s\n\n所有应用列表、图片和下载都将从该服务器获取。Suitefish 无法验证自定义服务器的可信度或隐私做法——你需对所连接的服务器负责。\n\n此声明会在每次启动时显示。</string>
+    <string name="privacy_accept">我理解并接受</string>
+    <string name="privacy_decline">退出</string>
+
+    <!-- Server selection -->
+    <string name="server_choose_title">选择服务器</string>
+    <string name="server_choose_body">Suitefish 需要一个目录服务器来加载应用。你可以使用默认服务器，或将应用指向你自己的自定义服务器。此选择会被保存，稍后可在设置中更改。</string>
+    <string name="server_default">默认服务器</string>
+    <string name="server_default_sub">使用官方 suitefish.com 目录。</string>
+    <string name="server_custom">自定义服务器</string>
+    <string name="server_custom_sub">连接到你自己的目录服务器。</string>
+    <string name="server_custom_help">必须使用 HTTPS 并强制执行。请输入可访问的在线域名或 IP。若要使用 443 以外的端口，请附加 :端口（例如 example.com:8443）。</string>
+    <string name="onb_accept_risk">我理解并接受这些风险</string>
+
+    <!-- Insecure TLS toggle -->
+    <string name="allow_insecure_title">允许不受信任的证书</string>
+    <string name="allow_insecure_onb">允许不受信任 / 自签名证书</string>
+    <string name="allow_insecure_sub">接受自签名或其他不受信任的 HTTPS 证书。仅对你控制并信任的服务器启用此选项。</string>
+    <string name="allow_insecure_warn_title">禁用证书检查？</string>
+    <string name="allow_insecure_warn_body">启用此选项会使 Suitefish 停止验证服务器的 HTTPS 证书。届时流量可能被中间人（man-in-the-middle）拦截或篡改，使你面临恶意软件或数据泄露的风险。仅对你完全信任的自托管服务器启用此选项。\n\n仍要启用吗？</string>
+    <string name="allow_insecure_enable">启用</string>
+    <string name="server_continue">继续</string>
+    <string name="server_invalid">服务器无效。请输入有效的在线域名或 IP。强制使用 HTTPS；只能添加 :端口。</string>
+    <string name="server_unreachable">无法通过 HTTPS 访问服务器。请检查地址和你的连接。</string>
+
+    <!-- Store / lists -->
+    <string name="search_hint">搜索应用…</string>
+    <string name="btn_sync">同步目录</string>
+    <string name="btn_check_updates">检查更新</string>
+    <string name="filter_all">所有类别</string>
+    <string name="badge_installed">已安装</string>
+    <string name="badge_update">更新</string>
+    <string name="empty_store">本地目录中还没有应用。点按\"同步目录\"以从服务器获取列表。</string>
+    <string name="empty_installed">你已安装的应用均不来自此 Suitefish 商店，或者目录尚未同步。</string>
+    <string name="empty_search">没有与你的搜索匹配的应用。</string>
+    <string name="sync_done">目录已更新：%1$d 个应用。</string>
+    <string name="sync_offline">无法访问服务器。已保留你上次保存的目录。</string>
+    <string name="last_synced">上次同步：%1$s</string>
+    <string name="never">从不</string>
+
+    <!-- Detail -->
+    <string name="detail_download">下载并安装</string>
+    <string name="detail_update">更新</string>
+    <string name="detail_open_uninstall">卸载</string>
+    <string name="detail_version">版本 %1$s</string>
+    <string name="detail_installed_version">已安装：%1$s</string>
+    <string name="detail_category">类别：%1$s</string>
+
+    <string name="install_help_title">从不受信任的来源安装应用</string>
+    <string name="install_help_body">Suitefish 安装的应用并非来自 Google Play，因此 Android 会将它们视为来自\"未知来源\"。\n\n当你安装应用时，Android 可能会要求你允许来自 Suitefish 的安装：\n\n1. 出现提示时，点按设置。\n2. 为 Suitefish 启用\"允许来自此来源\"（安装未知应用）。\n3. 返回并确认安装。\n\n你可以随时在 Android 设置 &gt; 应用 &gt; 特殊访问权限 &gt; 安装未知应用 中撤销此权限。请仅安装你信任的应用。</string>
+    <string name="install_help_got_it">知道了</string>
+
+    <!-- Update confirmations -->
+    <string name="confirm_online_title">联系服务器？</string>
+    <string name="confirm_update_body">为检查更新，Suitefish 将为已安装的 Suitefish 应用联系在线服务器。是否继续？</string>
+    <string name="confirm_download_body">Suitefish 现在将联系在线服务器并下载此应用。是否继续？</string>
+    <string name="updates_found">有 %1$d 个可用更新。</string>
+    <string name="updates_none">所有 Suitefish 应用均为最新。</string>
+    <string name="download_offline_title">无法访问服务器</string>
+    <string name="download_offline_body">Suitefish 无法访问服务器，因此无法下载此应用。你的设备可能处于离线状态，或者服务器可能已关闭。已保留你保存的目录。</string>
+
+    <!-- Settings -->
+    <string name="settings_server_title">目录服务器</string>
+    <string name="settings_current_server">当前：%1$s</string>
+    <string name="settings_change_server">更改服务器</string>
+    <string name="settings_change_warning_title">更改服务器？</string>
+    <string name="settings_change_warning_body">更改服务器将删除所有本地存储的数据（目录、缓存的图片和已下载的文件），并重新启动应用。你已安装的应用不会被移除。是否继续？</string>
+    <string name="settings_wipe_title">重置本地数据</string>
+    <string name="settings_wipe_body">删除本地目录、缓存的图片和已下载的 APK。应用将重新启动。</string>
+    <string name="settings_wipe">重置并重启</string>
+    <string name="settings_data_title">存储</string>
+    <string name="settings_show_privacy">显示隐私声明</string>
+    <string name="settings_show_risk">显示风险声明</string>
+    <string name="settings_show_install_help">如何安装不受信任的应用</string>
+
+    <!-- About -->
+    <string name="about_tagline">一款免费的开源应用商店客户端。</string>
+    <string name="about_version_fmt">版本 %1$s</string>
+    <string name="about_body">Suitefish 是一款对社区友好的开源客户端，用于从 Suitefish 目录服务器浏览和安装应用。它免费提供，没有广告，应用本身也不添加任何跟踪。</string>
+    <string name="about_author_title">作者</string>
+    <string name="about_author_body">由 Bugfish 制作 —— \"Dreaming in Digital.\" Bugfish 涉猎 Android、框架、JavaScript、游戏、Windows 和 Web 软件。</string>
+    <string name="about_website">网站：bugfishtm.github.io</string>
+    <string name="about_youtube">YouTube：youtube.com/bugfishtm</string>
+    <string name="about_repo_title">开源</string>
+    <string name="about_repo_body">Suitefish 是开源的。欢迎在 GitHub 上提交源代码、问题和贡献。</string>
+    <string name="about_repo">GitHub：github.com/bugfishtm/suitefish-android</string>
+    <string name="about_license">免费且开源 · 使用风险自负。</string>
+</resources>

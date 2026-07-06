@@ -1,0 +1,104 @@
+<resources>
+    <!-- Tabs -->
+    <string name="tab_installed">Yüklü</string>
+    <string name="tab_store">Mağaza</string>
+    <string name="tab_settings">Ayarlar</string>
+    <string name="tab_about">Hakkında</string>
+
+    <!-- Onboarding -->
+    <string name="onb_welcome_title">Suitefish\'e hoş geldiniz</string>
+    <string name="onb_welcome_body">Suitefish, hafif ve açık kaynaklı bir uygulama mağazası istemcisidir. Çevrimiçi bir katalog sunucusuna bağlanır, mevcut uygulamaları listeler ve bunları indirip yüklemenize olanak tanır.</string>
+
+    <string name="risk_title">Kullanım sorumluluğu size aittir</string>
+    <string name="risk_body">Suitefish\'i tamamen kendi sorumluluğunuzda kullanırsınız. Bu uygulama, resmi uygulama mağazalarının dışındaki çevrimiçi bir kaynaktan yazılım yükler.\n\nYanlış, kötü amaçlı veya hatalı yapılandırılmış özel bir sunucu kullanmak sizi güvenlik açıklarına, kötü amaçlı yazılımlara veya veri sızıntılarına maruz bırakabilir. Yalnızca tamamen güvendiğiniz sunuculara bağlanın. Ne geliştirici ne de Suitefish, bu uygulamanın veya özel bir sunucunun kullanımından kaynaklanan herhangi bir zarardan, veri kaybından veya güvenlik olayından sorumlu değildir.</string>
+
+    <string name="privacy_title">Gizlilik bildirimi</string>
+    <string name="privacy_body_default">Suitefish şu anda varsayılan sunucuyu kullanacak şekilde yapılandırılmış.\n\nVarsayılan sunucu kullanıldığında, uygulama verilerini (uygulama listeleri, görseller ve indirmeler) suitefish.com web sitesinden alır. Devam ederek suitefish.com üzerinde yayımlanan veri politikasını kabul edersiniz. Lütfen uygulamayı kullanmadan önce bu politikayı inceleyin.\n\nBu bildirim her başlatmada gösterilir.</string>
+    <string name="privacy_body_custom">Suitefish şu anda özel bir sunucuyu kullanacak şekilde yapılandırılmış:\n\n%1$s\n\nTüm uygulama listeleri, görseller ve indirmeler bu sunucudan alınır. Suitefish, özel sunucuların güvenilirliğini veya gizlilik uygulamalarını doğrulayamaz — bağlandığınız sunucudan siz sorumlusunuz.\n\nBu bildirim her başlatmada gösterilir.</string>
+    <string name="privacy_accept">Anlıyorum ve kabul ediyorum</string>
+    <string name="privacy_decline">Çıkış</string>
+
+    <!-- Server selection -->
+    <string name="server_choose_title">Bir sunucu seçin</string>
+    <string name="server_choose_body">Suitefish, uygulamaları yüklemek için bir katalog sunucusuna ihtiyaç duyar. Varsayılan sunucuyu kullanabilir veya uygulamayı kendi özel sunucunuza yönlendirebilirsiniz. Bu seçim kaydedilir ve daha sonra Ayarlar\'dan değiştirilebilir.</string>
+    <string name="server_default">Varsayılan sunucu</string>
+    <string name="server_default_sub">Resmi suitefish.com kataloğunu kullan.</string>
+    <string name="server_custom">Özel sunucu</string>
+    <string name="server_custom_sub">Kendi katalog sunucunuza bağlanın.</string>
+    <string name="server_custom_help">HTTPS gereklidir ve zorunlu tutulur. Erişilebilir bir çevrimiçi alan adı veya IP girin. 443 dışında bir bağlantı noktası kullanmak için :port ekleyin (örneğin example.com:8443).</string>
+    <string name="onb_accept_risk">Riskleri anlıyorum ve kabul ediyorum</string>
+
+    <!-- Insecure TLS toggle -->
+    <string name="allow_insecure_title">Güvenilmeyen sertifikalara izin ver</string>
+    <string name="allow_insecure_onb">Güvenilmeyen / kendinden imzalı sertifikalara izin ver</string>
+    <string name="allow_insecure_sub">Kendinden imzalı veya başka şekilde güvenilmeyen HTTPS sertifikalarını kabul edin. Bunu yalnızca kontrol ettiğiniz ve güvendiğiniz bir sunucu için etkinleştirin.</string>
+    <string name="allow_insecure_warn_title">Sertifika denetimleri devre dışı bırakılsın mı?</string>
+    <string name="allow_insecure_warn_body">Bunu açmak, Suitefish\'in sunucunun HTTPS sertifikasını doğrulamasını durdurur. Trafik daha sonra bir aradaki saldırgan (man-in-the-middle) tarafından ele geçirilebilir veya değiştirilebilir; bu da sizi kötü amaçlı yazılımlara veya veri sızıntılarına maruz bırakır. Bunu yalnızca tamamen güvendiğiniz, kendi barındırdığınız bir sunucu için etkinleştirin.\n\nYine de etkinleştirilsin mi?</string>
+    <string name="allow_insecure_enable">Etkinleştir</string>
+    <string name="server_continue">Devam</string>
+    <string name="server_invalid">Geçersiz sunucu. Geçerli bir çevrimiçi alan adı veya IP girin. HTTPS zorunludur; yalnızca :port eklenebilir.</string>
+    <string name="server_unreachable">Sunucuya HTTPS üzerinden ulaşılamadı. Adresi ve bağlantınızı kontrol edin.</string>
+
+    <!-- Store / lists -->
+    <string name="search_hint">Uygulama ara…</string>
+    <string name="btn_sync">Kataloğu eşitle</string>
+    <string name="btn_check_updates">Güncellemeleri denetle</string>
+    <string name="filter_all">Tüm kategoriler</string>
+    <string name="badge_installed">Yüklü</string>
+    <string name="badge_update">Güncelle</string>
+    <string name="empty_store">Yerel katalogda henüz uygulama yok. Listeyi sunucudan almak için \"Kataloğu eşitle\"ye dokunun.</string>
+    <string name="empty_installed">Yüklü uygulamalarınızın hiçbiri bu Suitefish mağazasından değil ya da katalog henüz eşitlenmedi.</string>
+    <string name="empty_search">Aramanızla eşleşen uygulama yok.</string>
+    <string name="sync_done">Katalog güncellendi: %1$d uygulama.</string>
+    <string name="sync_offline">Sunucuya ulaşılamıyor. Son kaydedilen kataloğunuz korundu.</string>
+    <string name="last_synced">Son eşitleme: %1$s</string>
+    <string name="never">hiçbir zaman</string>
+
+    <!-- Detail -->
+    <string name="detail_download">İndir ve yükle</string>
+    <string name="detail_update">Güncelle</string>
+    <string name="detail_open_uninstall">Kaldır</string>
+    <string name="detail_version">Sürüm %1$s</string>
+    <string name="detail_installed_version">Yüklü: %1$s</string>
+    <string name="detail_category">Kategori: %1$s</string>
+
+    <string name="install_help_title">Güvenilmeyen kaynaklardan uygulama yükleme</string>
+    <string name="install_help_body">Suitefish, Google Play\'den gelmeyen uygulamalar yükler, bu nedenle Android bunları \"bilinmeyen kaynak\"tan geliyormuş gibi ele alır.\n\nBir uygulama yüklediğinizde Android, Suitefish\'ten yüklemelere izin vermenizi isteyebilir:\n\n1. İstendiğinde Ayarlar\'a dokunun.\n2. Suitefish için \"Bu kaynağa izin ver\" (Bilinmeyen uygulamaları yükle) seçeneğini etkinleştirin.\n3. Geri dönün ve yüklemeyi onaylayın.\n\nBu izni istediğiniz zaman Android Ayarları &gt; Uygulamalar &gt; Özel erişim &gt; Bilinmeyen uygulamaları yükle bölümünden geri alabilirsiniz. Yalnızca güvendiğiniz uygulamaları yükleyin.</string>
+    <string name="install_help_got_it">Anladım</string>
+
+    <!-- Update confirmations -->
+    <string name="confirm_online_title">Sunucuya bağlanılsın mı?</string>
+    <string name="confirm_update_body">Güncellemeleri denetlemek için Suitefish, yüklü Suitefish uygulamaları için çevrimiçi sunucuya bağlanacak. Devam edilsin mi?</string>
+    <string name="confirm_download_body">Suitefish şimdi çevrimiçi sunucuya bağlanacak ve bu uygulamayı indirecek. Devam edilsin mi?</string>
+    <string name="updates_found">%1$d güncelleme mevcut.</string>
+    <string name="updates_none">Tüm Suitefish uygulamaları güncel.</string>
+    <string name="download_offline_title">Sunucuya ulaşılamıyor</string>
+    <string name="download_offline_body">Suitefish sunucuya ulaşamadı, bu nedenle bu uygulama indirilemedi. Cihazınız çevrimdışı olabilir veya sunucu kapalı olabilir. Kaydedilen kataloğunuz korundu.</string>
+
+    <!-- Settings -->
+    <string name="settings_server_title">Katalog sunucusu</string>
+    <string name="settings_current_server">Geçerli: %1$s</string>
+    <string name="settings_change_server">Sunucuyu değiştir</string>
+    <string name="settings_change_warning_title">Sunucu değiştirilsin mi?</string>
+    <string name="settings_change_warning_body">Sunucuyu değiştirmek, yerel olarak kaydedilen tüm verileri (katalog, önbelleğe alınmış görseller ve indirilen dosyalar) SİLER ve uygulamayı sıfırdan yeniden başlatır. Yüklü uygulamalarınız kaldırılmaz. Devam edilsin mi?</string>
+    <string name="settings_wipe_title">Yerel verileri sıfırla</string>
+    <string name="settings_wipe_body">Yerel kataloğu, önbelleğe alınmış görselleri ve indirilen APK\'ları sil. Uygulama yeniden başlatılacak.</string>
+    <string name="settings_wipe">Sıfırla ve yeniden başlat</string>
+    <string name="settings_data_title">Depolama</string>
+    <string name="settings_show_privacy">Gizlilik bildirimini göster</string>
+    <string name="settings_show_risk">Risk bildirimini göster</string>
+    <string name="settings_show_install_help">Güvenilmeyen uygulamalar nasıl yüklenir</string>
+
+    <!-- About -->
+    <string name="about_tagline">Ücretsiz, açık kaynaklı bir uygulama mağazası istemcisi.</string>
+    <string name="about_version_fmt">Sürüm %1$s</string>
+    <string name="about_body">Suitefish, bir Suitefish katalog sunucusundan uygulamalara göz atmak ve bunları yüklemek için topluluk dostu, açık kaynaklı bir istemcidir. Ücretsiz olarak sunulur; reklam yoktur ve uygulamanın kendisi tarafından eklenen bir izleme yoktur.</string>
+    <string name="about_author_title">Yazar</string>
+    <string name="about_author_body">Bugfish tarafından yapıldı — \"Dreaming in Digital.\" Bugfish; Android, çerçeveler, JavaScript, oyunlar, Windows ve web yazılımları geliştirir.</string>
+    <string name="about_website">Web sitesi: bugfishtm.github.io</string>
+    <string name="about_youtube">YouTube: youtube.com/bugfishtm</string>
+    <string name="about_repo_title">Açık kaynak</string>
+    <string name="about_repo_body">Suitefish açık kaynaklıdır. Kaynak kodu, sorunlar ve katkılar GitHub\'da memnuniyetle karşılanır.</string>
+    <string name="about_repo">GitHub: github.com/bugfishtm/suitefish-android</string>
+    <string name="about_license">Ücretsiz ve açık kaynak · Kullanım sorumluluğu size aittir.</string>
+</resources>

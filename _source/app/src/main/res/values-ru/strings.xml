@@ -1,0 +1,104 @@
+<resources>
+    <!-- Tabs -->
+    <string name="tab_installed">Установленные</string>
+    <string name="tab_store">Магазин</string>
+    <string name="tab_settings">Настройки</string>
+    <string name="tab_about">О приложении</string>
+
+    <!-- Onboarding -->
+    <string name="onb_welcome_title">Добро пожаловать в Suitefish</string>
+    <string name="onb_welcome_body">Suitefish — это лёгкий клиент магазина приложений с открытым исходным кодом. Он подключается к онлайн-серверу каталога, показывает доступные приложения и позволяет скачивать и устанавливать их.</string>
+
+    <string name="risk_title">Использование на свой риск</string>
+    <string name="risk_body">Вы используете Suitefish полностью на свой страх и риск. Это приложение устанавливает программное обеспечение из онлайн-источника за пределами официальных магазинов приложений.\n\nИспользование неправильного, вредоносного или неправильно настроенного пользовательского сервера может подвергнуть вас уязвимостям, вредоносному ПО или утечкам данных. Подключайтесь только к серверам, которым полностью доверяете. Ни разработчик, ни Suitefish не несут ответственности за ущерб, потерю данных или инциденты безопасности, возникшие в результате использования этого приложения или пользовательского сервера.</string>
+
+    <string name="privacy_title">Уведомление о конфиденциальности</string>
+    <string name="privacy_body_default">Suitefish в настоящее время настроен на использование сервера по умолчанию.\n\nПри использовании сервера по умолчанию приложение получает свои данные (списки приложений, изображения и загрузки) с веб-сайта suitefish.com. Продолжая, вы принимаете политику обработки данных, опубликованную на suitefish.com. Пожалуйста, ознакомьтесь с этой политикой перед использованием приложения.\n\nЭто уведомление показывается при каждом запуске.</string>
+    <string name="privacy_body_custom">Suitefish в настоящее время настроен на использование пользовательского сервера:\n\n%1$s\n\nВсе списки приложений, изображения и загрузки будут получены с этого сервера. Suitefish не может проверить надёжность или методы обеспечения конфиденциальности пользовательских серверов — вы несёте ответственность за сервер, к которому подключаетесь.\n\nЭто уведомление показывается при каждом запуске.</string>
+    <string name="privacy_accept">Я понимаю и принимаю</string>
+    <string name="privacy_decline">Выйти</string>
+
+    <!-- Server selection -->
+    <string name="server_choose_title">Выберите сервер</string>
+    <string name="server_choose_body">Suitefish нужен сервер каталога для загрузки приложений. Вы можете использовать сервер по умолчанию или указать собственный пользовательский сервер. Этот выбор сохраняется и может быть изменён позже в настройках.</string>
+    <string name="server_default">Сервер по умолчанию</string>
+    <string name="server_default_sub">Использовать официальный каталог suitefish.com.</string>
+    <string name="server_custom">Пользовательский сервер</string>
+    <string name="server_custom_sub">Подключиться к собственному серверу каталога.</string>
+    <string name="server_custom_help">HTTPS обязателен и принудительно применяется. Введите доступный онлайн-домен или IP. Чтобы использовать порт, отличный от 443, добавьте :порт (например, example.com:8443).</string>
+    <string name="onb_accept_risk">Я понимаю и принимаю риски</string>
+
+    <!-- Insecure TLS toggle -->
+    <string name="allow_insecure_title">Разрешить недоверенные сертификаты</string>
+    <string name="allow_insecure_onb">Разрешить недоверенные / самоподписанные сертификаты</string>
+    <string name="allow_insecure_sub">Принимать самоподписанные или иным образом недоверенные HTTPS-сертификаты. Включайте это только для сервера, который вы контролируете и которому доверяете.</string>
+    <string name="allow_insecure_warn_title">Отключить проверку сертификатов?</string>
+    <string name="allow_insecure_warn_body">Включение этой опции отключает проверку HTTPS-сертификата сервера в Suitefish. После этого трафик может быть перехвачен или изменён посредником (man-in-the-middle), что подвергает вас риску вредоносного ПО или утечек данных. Включайте это только для самостоятельно размещённого сервера, которому вы полностью доверяете.\n\nВсё равно включить?</string>
+    <string name="allow_insecure_enable">Включить</string>
+    <string name="server_continue">Продолжить</string>
+    <string name="server_invalid">Недействительный сервер. Введите действительный онлайн-домен или IP. HTTPS применяется принудительно; можно добавить только :порт.</string>
+    <string name="server_unreachable">Не удалось подключиться к серверу по HTTPS. Проверьте адрес и подключение.</string>
+
+    <!-- Store / lists -->
+    <string name="search_hint">Поиск приложений…</string>
+    <string name="btn_sync">Синхронизировать каталог</string>
+    <string name="btn_check_updates">Проверить обновления</string>
+    <string name="filter_all">Все категории</string>
+    <string name="badge_installed">Установлено</string>
+    <string name="badge_update">Обновление</string>
+    <string name="empty_store">В локальном каталоге пока нет приложений. Нажмите \"Синхронизировать каталог\", чтобы получить список с сервера.</string>
+    <string name="empty_installed">Ни одно из установленных приложений не из этого магазина Suitefish, или каталог ещё не синхронизирован.</string>
+    <string name="empty_search">Нет приложений, соответствующих вашему запросу.</string>
+    <string name="sync_done">Каталог обновлён: приложений — %1$d.</string>
+    <string name="sync_offline">Сервер недоступен. Ваш последний сохранённый каталог сохранён.</string>
+    <string name="last_synced">Последняя синхронизация: %1$s</string>
+    <string name="never">никогда</string>
+
+    <!-- Detail -->
+    <string name="detail_download">Скачать и установить</string>
+    <string name="detail_update">Обновить</string>
+    <string name="detail_open_uninstall">Удалить</string>
+    <string name="detail_version">Версия %1$s</string>
+    <string name="detail_installed_version">Установлено: %1$s</string>
+    <string name="detail_category">Категория: %1$s</string>
+
+    <string name="install_help_title">Установка приложений из недоверенных источников</string>
+    <string name="install_help_body">Suitefish устанавливает приложения, которые не из Google Play, поэтому Android считает их поступающими из \"неизвестного источника\".\n\nПри установке приложения Android может попросить вас разрешить установку из Suitefish:\n\n1. При появлении запроса нажмите Настройки.\n2. Включите \"Разрешить из этого источника\" (Установка неизвестных приложений) для Suitefish.\n3. Вернитесь назад и подтвердите установку.\n\nВы можете отозвать это разрешение в любое время в Настройках Android &gt; Приложения &gt; Специальный доступ &gt; Установка неизвестных приложений. Устанавливайте только те приложения, которым доверяете.</string>
+    <string name="install_help_got_it">Понятно</string>
+
+    <!-- Update confirmations -->
+    <string name="confirm_online_title">Связаться с сервером?</string>
+    <string name="confirm_update_body">Чтобы проверить обновления, Suitefish свяжется с онлайн-сервером для установленных приложений Suitefish. Продолжить?</string>
+    <string name="confirm_download_body">Suitefish сейчас свяжется с онлайн-сервером и скачает это приложение. Продолжить?</string>
+    <string name="updates_found">Доступно обновлений: %1$d.</string>
+    <string name="updates_none">Все приложения Suitefish обновлены.</string>
+    <string name="download_offline_title">Сервер недоступен</string>
+    <string name="download_offline_body">Suitefish не удалось связаться с сервером, поэтому это приложение не удалось скачать. Возможно, ваше устройство не в сети или сервер недоступен. Ваш сохранённый каталог сохранён.</string>
+
+    <!-- Settings -->
+    <string name="settings_server_title">Сервер каталога</string>
+    <string name="settings_current_server">Текущий: %1$s</string>
+    <string name="settings_change_server">Сменить сервер</string>
+    <string name="settings_change_warning_title">Сменить сервер?</string>
+    <string name="settings_change_warning_body">Смена сервера УДАЛИТ все локально сохранённые данные (каталог, кэшированные изображения и загруженные файлы) и перезапустит приложение заново. Ваши установленные приложения не удаляются. Продолжить?</string>
+    <string name="settings_wipe_title">Сбросить локальные данные</string>
+    <string name="settings_wipe_body">Удалить локальный каталог, кэшированные изображения и загруженные APK. Приложение будет перезапущено.</string>
+    <string name="settings_wipe">Сбросить и перезапустить</string>
+    <string name="settings_data_title">Хранилище</string>
+    <string name="settings_show_privacy">Показать уведомление о конфиденциальности</string>
+    <string name="settings_show_risk">Показать уведомление о рисках</string>
+    <string name="settings_show_install_help">Как устанавливать недоверенные приложения</string>
+
+    <!-- About -->
+    <string name="about_tagline">Бесплатный клиент магазина приложений с открытым исходным кодом.</string>
+    <string name="about_version_fmt">Версия %1$s</string>
+    <string name="about_body">Suitefish — это дружественный к сообществу клиент с открытым исходным кодом для просмотра и установки приложений с сервера каталога Suitefish. Он предоставляется бесплатно, без рекламы и без отслеживания, добавленного самим приложением.</string>
+    <string name="about_author_title">Автор</string>
+    <string name="about_author_body">Создано Bugfish — \"Dreaming in Digital.\" Bugfish разрабатывает для Android, фреймворков, JavaScript, игр, Windows и веб-программного обеспечения.</string>
+    <string name="about_website">Веб-сайт: bugfishtm.github.io</string>
+    <string name="about_youtube">YouTube: youtube.com/bugfishtm</string>
+    <string name="about_repo_title">Открытый исходный код</string>
+    <string name="about_repo_body">Suitefish имеет открытый исходный код. Исходный код, задачи и вклады приветствуются на GitHub.</string>
+    <string name="about_repo">GitHub: github.com/bugfishtm/suitefish-android</string>
+    <string name="about_license">Бесплатно и с открытым исходным кодом · Использование на свой риск.</string>
+</resources>

@@ -1,0 +1,104 @@
+<resources>
+    <!-- Tabs -->
+    <string name="tab_installed">설치됨</string>
+    <string name="tab_store">스토어</string>
+    <string name="tab_settings">설정</string>
+    <string name="tab_about">정보</string>
+
+    <!-- Onboarding -->
+    <string name="onb_welcome_title">Suitefish에 오신 것을 환영합니다</string>
+    <string name="onb_welcome_body">Suitefish는 가볍고 오픈 소스인 앱 스토어 클라이언트입니다. 온라인 카탈로그 서버에 연결하여 사용 가능한 앱을 나열하고 다운로드 및 설치할 수 있습니다.</string>
+
+    <string name="risk_title">본인 책임하에 사용</string>
+    <string name="risk_body">Suitefish는 전적으로 본인 책임하에 사용합니다. 이 앱은 공식 앱 스토어 외부의 온라인 소스에서 소프트웨어를 설치합니다.\n\n잘못되었거나 악의적이거나 잘못 구성된 사용자 지정 서버를 사용하면 취약점, 멀웨어 또는 데이터 유출에 노출될 수 있습니다. 완전히 신뢰하는 서버에만 연결하십시오. 개발자와 Suitefish는 이 앱 또는 사용자 지정 서버 사용으로 인한 손해, 데이터 손실 또는 보안 사고에 대해 책임지지 않습니다.</string>
+
+    <string name="privacy_title">개인정보 보호 고지</string>
+    <string name="privacy_body_default">Suitefish는 현재 기본 서버를 사용하도록 구성되어 있습니다.\n\n기본 서버를 사용하면 앱이 데이터(앱 목록, 이미지 및 다운로드)를 suitefish.com 웹사이트에서 가져옵니다. 계속하면 suitefish.com에 게시된 데이터 정책에 동의하는 것입니다. 앱을 사용하기 전에 해당 정책을 검토하십시오.\n\n이 고지는 시작할 때마다 표시됩니다.</string>
+    <string name="privacy_body_custom">Suitefish는 현재 사용자 지정 서버를 사용하도록 구성되어 있습니다:\n\n%1$s\n\n모든 앱 목록, 이미지 및 다운로드는 해당 서버에서 가져옵니다. Suitefish는 사용자 지정 서버의 신뢰성이나 개인정보 처리 방침을 확인할 수 없습니다. 연결하는 서버에 대한 책임은 사용자에게 있습니다.\n\n이 고지는 시작할 때마다 표시됩니다.</string>
+    <string name="privacy_accept">이해했으며 동의합니다</string>
+    <string name="privacy_decline">종료</string>
+
+    <!-- Server selection -->
+    <string name="server_choose_title">서버 선택</string>
+    <string name="server_choose_body">Suitefish는 앱을 불러올 카탈로그 서버가 필요합니다. 기본 서버를 사용하거나 앱을 자신의 사용자 지정 서버로 지정할 수 있습니다. 이 선택은 저장되며 나중에 설정에서 변경할 수 있습니다.</string>
+    <string name="server_default">기본 서버</string>
+    <string name="server_default_sub">공식 suitefish.com 카탈로그를 사용합니다.</string>
+    <string name="server_custom">사용자 지정 서버</string>
+    <string name="server_custom_sub">자신의 카탈로그 서버에 연결합니다.</string>
+    <string name="server_custom_help">HTTPS가 필요하며 적용됩니다. 접근 가능한 온라인 도메인 또는 IP를 입력하십시오. 443 이외의 포트를 사용하려면 :포트를 추가하십시오 (예: example.com:8443).</string>
+    <string name="onb_accept_risk">위험을 이해했으며 동의합니다</string>
+
+    <!-- Insecure TLS toggle -->
+    <string name="allow_insecure_title">신뢰할 수 없는 인증서 허용</string>
+    <string name="allow_insecure_onb">신뢰할 수 없는 / 자체 서명 인증서 허용</string>
+    <string name="allow_insecure_sub">자체 서명되었거나 신뢰할 수 없는 HTTPS 인증서를 수락합니다. 사용자가 관리하고 신뢰하는 서버에 대해서만 활성화하십시오.</string>
+    <string name="allow_insecure_warn_title">인증서 검사를 비활성화하시겠습니까?</string>
+    <string name="allow_insecure_warn_body">이 옵션을 켜면 Suitefish가 서버의 HTTPS 인증서를 확인하지 않습니다. 그러면 트래픽이 중간자(man-in-the-middle)에 의해 가로채이거나 변경되어 멀웨어나 데이터 유출에 노출될 수 있습니다. 완전히 신뢰하는 자체 호스팅 서버에 대해서만 활성화하십시오.\n\n그래도 활성화하시겠습니까?</string>
+    <string name="allow_insecure_enable">활성화</string>
+    <string name="server_continue">계속</string>
+    <string name="server_invalid">잘못된 서버입니다. 유효한 온라인 도메인 또는 IP를 입력하십시오. HTTPS가 적용되며 :포트만 추가할 수 있습니다.</string>
+    <string name="server_unreachable">HTTPS를 통해 서버에 연결할 수 없습니다. 주소와 연결을 확인하십시오.</string>
+
+    <!-- Store / lists -->
+    <string name="search_hint">앱 검색…</string>
+    <string name="btn_sync">카탈로그 동기화</string>
+    <string name="btn_check_updates">업데이트 확인</string>
+    <string name="filter_all">모든 카테고리</string>
+    <string name="badge_installed">설치됨</string>
+    <string name="badge_update">업데이트</string>
+    <string name="empty_store">로컬 카탈로그에 아직 앱이 없습니다. 서버에서 목록을 가져오려면 \"카탈로그 동기화\"를 탭하십시오.</string>
+    <string name="empty_installed">설치된 앱 중 이 Suitefish 스토어에서 온 앱이 없거나 카탈로그가 아직 동기화되지 않았습니다.</string>
+    <string name="empty_search">검색과 일치하는 앱이 없습니다.</string>
+    <string name="sync_done">카탈로그 업데이트됨: 앱 %1$d개.</string>
+    <string name="sync_offline">서버에 연결할 수 없습니다. 마지막으로 저장된 카탈로그가 유지되었습니다.</string>
+    <string name="last_synced">마지막 동기화: %1$s</string>
+    <string name="never">없음</string>
+
+    <!-- Detail -->
+    <string name="detail_download">다운로드 및 설치</string>
+    <string name="detail_update">업데이트</string>
+    <string name="detail_open_uninstall">제거</string>
+    <string name="detail_version">버전 %1$s</string>
+    <string name="detail_installed_version">설치됨: %1$s</string>
+    <string name="detail_category">카테고리: %1$s</string>
+
+    <string name="install_help_title">신뢰할 수 없는 출처의 앱 설치</string>
+    <string name="install_help_body">Suitefish는 Google Play에서 제공되지 않는 앱을 설치하므로 Android는 이를 \"알 수 없는 출처\"에서 온 것으로 취급합니다.\n\n앱을 설치할 때 Android가 Suitefish에서의 설치를 허용하도록 요청할 수 있습니다:\n\n1. 요청이 표시되면 설정을 탭합니다.\n2. Suitefish에 대해 \"이 출처 허용\"(알 수 없는 앱 설치)을 활성화합니다.\n3. 뒤로 돌아가 설치를 확인합니다.\n\n이 권한은 Android 설정 &gt; 앱 &gt; 특별한 접근 &gt; 알 수 없는 앱 설치에서 언제든지 취소할 수 있습니다. 신뢰하는 앱만 설치하십시오.</string>
+    <string name="install_help_got_it">확인</string>
+
+    <!-- Update confirmations -->
+    <string name="confirm_online_title">서버에 연결하시겠습니까?</string>
+    <string name="confirm_update_body">업데이트를 확인하기 위해 Suitefish가 설치된 Suitefish 앱에 대해 온라인 서버에 연결합니다. 계속하시겠습니까?</string>
+    <string name="confirm_download_body">Suitefish가 이제 온라인 서버에 연결하여 이 앱을 다운로드합니다. 계속하시겠습니까?</string>
+    <string name="updates_found">%1$d개의 업데이트가 있습니다.</string>
+    <string name="updates_none">모든 Suitefish 앱이 최신 상태입니다.</string>
+    <string name="download_offline_title">서버에 연결할 수 없음</string>
+    <string name="download_offline_body">Suitefish가 서버에 연결할 수 없어 이 앱을 다운로드하지 못했습니다. 기기가 오프라인이거나 서버가 다운되었을 수 있습니다. 저장된 카탈로그는 유지되었습니다.</string>
+
+    <!-- Settings -->
+    <string name="settings_server_title">카탈로그 서버</string>
+    <string name="settings_current_server">현재: %1$s</string>
+    <string name="settings_change_server">서버 변경</string>
+    <string name="settings_change_warning_title">서버를 변경하시겠습니까?</string>
+    <string name="settings_change_warning_body">서버를 변경하면 로컬에 저장된 모든 데이터(카탈로그, 캐시된 이미지 및 다운로드한 파일)가 삭제되고 앱이 새로 다시 시작됩니다. 설치된 앱은 제거되지 않습니다. 계속하시겠습니까?</string>
+    <string name="settings_wipe_title">로컬 데이터 초기화</string>
+    <string name="settings_wipe_body">로컬 카탈로그, 캐시된 이미지 및 다운로드한 APK를 삭제합니다. 앱이 다시 시작됩니다.</string>
+    <string name="settings_wipe">초기화 후 다시 시작</string>
+    <string name="settings_data_title">저장소</string>
+    <string name="settings_show_privacy">개인정보 보호 고지 표시</string>
+    <string name="settings_show_risk">위험 고지 표시</string>
+    <string name="settings_show_install_help">신뢰할 수 없는 앱 설치 방법</string>
+
+    <!-- About -->
+    <string name="about_tagline">무료 오픈 소스 앱 스토어 클라이언트.</string>
+    <string name="about_version_fmt">버전 %1$s</string>
+    <string name="about_body">Suitefish는 Suitefish 카탈로그 서버에서 앱을 탐색하고 설치하기 위한 커뮤니티 친화적인 오픈 소스 클라이언트입니다. 무료로 제공되며 광고가 없고 앱 자체에서 추가하는 추적도 없습니다.</string>
+    <string name="about_author_title">제작자</string>
+    <string name="about_author_body">Bugfish 제작 — \"Dreaming in Digital.\" Bugfish는 Android, 프레임워크, JavaScript, 게임, Windows 및 웹 소프트웨어를 폭넓게 개발합니다.</string>
+    <string name="about_website">웹사이트: bugfishtm.github.io</string>
+    <string name="about_youtube">YouTube: youtube.com/bugfishtm</string>
+    <string name="about_repo_title">오픈 소스</string>
+    <string name="about_repo_body">Suitefish는 오픈 소스입니다. 소스 코드, 이슈 및 기여를 GitHub에서 환영합니다.</string>
+    <string name="about_repo">GitHub: github.com/bugfishtm/suitefish-android</string>
+    <string name="about_license">무료 및 오픈 소스 · 본인 책임하에 사용.</string>
+</resources>

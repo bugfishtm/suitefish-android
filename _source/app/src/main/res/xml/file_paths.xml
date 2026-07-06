@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Downloaded APKs live in the app's external files dir under /downloads -->
+    <external-files-path
+        name="downloads"
+        path="downloads/" />
+    <files-path
+        name="internal_downloads"
+        path="downloads/" />
+</paths>

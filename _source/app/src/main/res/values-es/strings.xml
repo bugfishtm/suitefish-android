@@ -1,0 +1,104 @@
+<resources>
+    <!-- Tabs -->
+    <string name="tab_installed">Instaladas</string>
+    <string name="tab_store">Tienda</string>
+    <string name="tab_settings">Ajustes</string>
+    <string name="tab_about">Acerca de</string>
+
+    <!-- Onboarding -->
+    <string name="onb_welcome_title">Bienvenido a Suitefish</string>
+    <string name="onb_welcome_body">Suitefish es un cliente de tienda de aplicaciones ligero y de código abierto. Se conecta a un servidor de catálogo en línea, muestra las aplicaciones disponibles y te permite descargarlas e instalarlas.</string>
+
+    <string name="risk_title">Uso bajo tu propia responsabilidad</string>
+    <string name="risk_body">Usas Suitefish completamente bajo tu propia responsabilidad. Esta aplicación instala software desde una fuente en línea fuera de las tiendas de aplicaciones oficiales.\n\nUsar un servidor personalizado incorrecto, malicioso o mal configurado puede exponerte a vulnerabilidades, malware o filtraciones de datos. Conéctate solo a servidores en los que confíes plenamente. Ni el desarrollador ni Suitefish son responsables de daños, pérdida de datos o incidentes de seguridad derivados del uso de esta aplicación o de un servidor personalizado.</string>
+
+    <string name="privacy_title">Aviso de privacidad</string>
+    <string name="privacy_body_default">Suitefish está configurado actualmente para usar el servidor predeterminado.\n\nCuando se usa el servidor predeterminado, la aplicación obtiene sus datos (listas de aplicaciones, imágenes y descargas) del sitio web suitefish.com. Al continuar, aceptas la política de datos publicada en suitefish.com. Revisa esa política antes de usar la aplicación.\n\nEste aviso se muestra en cada inicio.</string>
+    <string name="privacy_body_custom">Suitefish está configurado actualmente para usar un servidor personalizado:\n\n%1$s\n\nTodas las listas de aplicaciones, imágenes y descargas se obtendrán de ese servidor. Suitefish no puede verificar la fiabilidad ni las prácticas de privacidad de los servidores personalizados: eres responsable del servidor al que te conectas.\n\nEste aviso se muestra en cada inicio.</string>
+    <string name="privacy_accept">Entiendo y acepto</string>
+    <string name="privacy_decline">Salir</string>
+
+    <!-- Server selection -->
+    <string name="server_choose_title">Elige un servidor</string>
+    <string name="server_choose_body">Suitefish necesita un servidor de catálogo desde el que cargar aplicaciones. Puedes usar el servidor predeterminado o apuntar la aplicación a tu propio servidor personalizado. Esta elección se guarda y puede cambiarse más tarde en los Ajustes.</string>
+    <string name="server_default">Servidor predeterminado</string>
+    <string name="server_default_sub">Usar el catálogo oficial de suitefish.com.</string>
+    <string name="server_custom">Servidor personalizado</string>
+    <string name="server_custom_sub">Conectarte a tu propio servidor de catálogo.</string>
+    <string name="server_custom_help">HTTPS es obligatorio y se aplica. Introduce un dominio o IP en línea accesible. Para usar un puerto distinto del 443, añade :puerto (por ejemplo, example.com:8443).</string>
+    <string name="onb_accept_risk">Entiendo y acepto los riesgos</string>
+
+    <!-- Insecure TLS toggle -->
+    <string name="allow_insecure_title">Permitir certificados no confiables</string>
+    <string name="allow_insecure_onb">Permitir certificados no confiables / autofirmados</string>
+    <string name="allow_insecure_sub">Aceptar certificados HTTPS autofirmados o de otro modo no confiables. Actívalo solo para un servidor que controles y en el que confíes.</string>
+    <string name="allow_insecure_warn_title">¿Desactivar la comprobación de certificados?</string>
+    <string name="allow_insecure_warn_body">Al activar esto, Suitefish deja de verificar el certificado HTTPS del servidor. El tráfico podría entonces ser interceptado o modificado por un intermediario (man-in-the-middle), exponiéndote a malware o filtraciones de datos. Actívalo solo para un servidor autoalojado en el que confíes plenamente.\n\n¿Activar de todos modos?</string>
+    <string name="allow_insecure_enable">Activar</string>
+    <string name="server_continue">Continuar</string>
+    <string name="server_invalid">Servidor no válido. Introduce un dominio o IP en línea válido. HTTPS es obligatorio; solo se puede añadir :puerto.</string>
+    <string name="server_unreachable">No se pudo acceder al servidor mediante HTTPS. Comprueba la dirección y tu conexión.</string>
+
+    <!-- Store / lists -->
+    <string name="search_hint">Buscar aplicaciones…</string>
+    <string name="btn_sync">Sincronizar catálogo</string>
+    <string name="btn_check_updates">Buscar actualizaciones</string>
+    <string name="filter_all">Todas las categorías</string>
+    <string name="badge_installed">Instalada</string>
+    <string name="badge_update">Actualizar</string>
+    <string name="empty_store">Aún no hay aplicaciones en el catálogo local. Toca \"Sincronizar catálogo\" para obtener la lista del servidor.</string>
+    <string name="empty_installed">Ninguna de tus aplicaciones instaladas proviene de esta tienda Suitefish, o el catálogo aún no se ha sincronizado.</string>
+    <string name="empty_search">Ninguna aplicación coincide con tu búsqueda.</string>
+    <string name="sync_done">Catálogo actualizado: %1$d aplicaciones.</string>
+    <string name="sync_offline">Servidor no accesible. Se ha conservado tu último catálogo guardado.</string>
+    <string name="last_synced">Última sincronización: %1$s</string>
+    <string name="never">nunca</string>
+
+    <!-- Detail -->
+    <string name="detail_download">Descargar e instalar</string>
+    <string name="detail_update">Actualizar</string>
+    <string name="detail_open_uninstall">Desinstalar</string>
+    <string name="detail_version">Versión %1$s</string>
+    <string name="detail_installed_version">Instalada: %1$s</string>
+    <string name="detail_category">Categoría: %1$s</string>
+
+    <string name="install_help_title">Instalar aplicaciones de fuentes no confiables</string>
+    <string name="install_help_body">Suitefish instala aplicaciones que no provienen de Google Play, por lo que Android las trata como de una \"fuente desconocida\".\n\nCuando instalas una aplicación, Android puede pedirte que permitas instalaciones desde Suitefish:\n\n1. Cuando se te solicite, toca Ajustes.\n2. Activa \"Permitir desde esta fuente\" (Instalar aplicaciones desconocidas) para Suitefish.\n3. Vuelve atrás y confirma la instalación.\n\nPuedes revocar este permiso en cualquier momento en Ajustes de Android &gt; Aplicaciones &gt; Acceso especial &gt; Instalar aplicaciones desconocidas. Instala solo aplicaciones en las que confíes.</string>
+    <string name="install_help_got_it">Entendido</string>
+
+    <!-- Update confirmations -->
+    <string name="confirm_online_title">¿Contactar con el servidor?</string>
+    <string name="confirm_update_body">Para buscar actualizaciones, Suitefish contactará con el servidor en línea para las aplicaciones Suitefish instaladas. ¿Continuar?</string>
+    <string name="confirm_download_body">Suitefish contactará ahora con el servidor en línea y descargará esta aplicación. ¿Continuar?</string>
+    <string name="updates_found">%1$d actualización(es) disponible(s).</string>
+    <string name="updates_none">Todas las aplicaciones Suitefish están actualizadas.</string>
+    <string name="download_offline_title">Servidor no accesible</string>
+    <string name="download_offline_body">Suitefish no pudo acceder al servidor, por lo que esta aplicación no se pudo descargar. Puede que tu dispositivo esté sin conexión o que el servidor no esté disponible. Se ha conservado tu catálogo guardado.</string>
+
+    <!-- Settings -->
+    <string name="settings_server_title">Servidor de catálogo</string>
+    <string name="settings_current_server">Actual: %1$s</string>
+    <string name="settings_change_server">Cambiar de servidor</string>
+    <string name="settings_change_warning_title">¿Cambiar de servidor?</string>
+    <string name="settings_change_warning_body">Cambiar de servidor ELIMINARÁ todos los datos almacenados localmente (catálogo, imágenes en caché y archivos descargados) y reiniciará la aplicación desde cero. Tus aplicaciones instaladas no se eliminan. ¿Continuar?</string>
+    <string name="settings_wipe_title">Restablecer datos locales</string>
+    <string name="settings_wipe_body">Eliminar el catálogo local, las imágenes en caché y los APK descargados. La aplicación se reiniciará.</string>
+    <string name="settings_wipe">Restablecer y reiniciar</string>
+    <string name="settings_data_title">Almacenamiento</string>
+    <string name="settings_show_privacy">Mostrar aviso de privacidad</string>
+    <string name="settings_show_risk">Mostrar aviso de riesgo</string>
+    <string name="settings_show_install_help">Cómo instalar aplicaciones no confiables</string>
+
+    <!-- About -->
+    <string name="about_tagline">Un cliente de tienda de aplicaciones gratuito y de código abierto.</string>
+    <string name="about_version_fmt">Versión %1$s</string>
+    <string name="about_body">Suitefish es un cliente de código abierto y amigable con la comunidad para explorar e instalar aplicaciones desde un servidor de catálogo Suitefish. Se ofrece de forma gratuita, sin anuncios ni seguimiento añadido por la propia aplicación.</string>
+    <string name="about_author_title">Autor</string>
+    <string name="about_author_body">Creado por Bugfish — \"Dreaming in Digital.\" Bugfish desarrolla para Android, frameworks, JavaScript, juegos, Windows y software web.</string>
+    <string name="about_website">Sitio web: bugfishtm.github.io</string>
+    <string name="about_youtube">YouTube: youtube.com/bugfishtm</string>
+    <string name="about_repo_title">Código abierto</string>
+    <string name="about_repo_body">Suitefish es de código abierto. El código fuente, los problemas y las contribuciones son bienvenidos en GitHub.</string>
+    <string name="about_repo">GitHub: github.com/bugfishtm/suitefish-android</string>
+    <string name="about_license">Gratuito y de código abierto · Uso bajo tu propia responsabilidad.</string>
+</resources>

@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Suitefish forces a dark, orange-accented look regardless of system setting. -->
+    <style name="Base.Theme.Suitefish" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/orange_primary</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimaryContainer">@color/orange_primary_dark</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSecondary">@color/orange_accent</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">@color/stroke</item>
+
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.Suitefish" parent="Base.Theme.Suitefish" />
+
+    <!-- Rounded-square mask for app icons in the store and detail views. -->
+    <style name="ShapeAppearanceOverlay.Suitefish.Icon" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">14dp</item>
+    </style>
+</resources>

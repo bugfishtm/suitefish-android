@@ -1,0 +1,112 @@
+<resources>
+    <string name="app_name" translatable="false">Suitefish</string>
+
+    <!-- Tabs -->
+    <string name="tab_installed">Installed</string>
+    <string name="tab_store">Store</string>
+    <string name="tab_settings">Settings</string>
+    <string name="tab_about">About</string>
+
+    <!-- Onboarding -->
+    <string name="onb_welcome_title">Welcome to Suitefish</string>
+    <string name="onb_welcome_body">Suitefish is a lightweight, open-source app store client. It connects to an online catalog server, lists available apps and lets you download and install them.</string>
+
+    <string name="risk_title">Use at your own risk</string>
+    <string name="risk_body">You use Suitefish entirely at your own risk. This app installs software from an online source outside of official app stores.\n\nUsing a wrong, malicious or misconfigured custom server can expose you to vulnerabilities, malware or data leaks. Only connect to servers you fully trust. Neither the developer nor Suitefish is responsible for any damage, data loss or security incident resulting from the use of this app or of a custom server.</string>
+
+    <string name="privacy_title">Privacy notice</string>
+    <string name="privacy_body_default">Suitefish is currently configured to use the default server.\n\nWhen the default server is used, the app fetches its data (app lists, images and downloads) from the suitefish.com website. By continuing you accept the data policy published on suitefish.com. Please review that policy before using the app.\n\nThis notice is shown on every start.</string>
+    <string name="privacy_body_custom">Suitefish is currently configured to use a custom server:\n\n%1$s\n\nAll app lists, images and downloads will be fetched from that server. Suitefish cannot verify the trustworthiness or privacy practices of custom servers — you are responsible for the server you connect to.\n\nThis notice is shown on every start.</string>
+    <string name="privacy_accept">I understand &amp; accept</string>
+    <string name="privacy_decline">Exit</string>
+
+    <!-- Server selection -->
+    <string name="server_choose_title">Choose a server</string>
+    <string name="server_choose_body">Suitefish needs a catalog server to load apps from. You can use the default server or point the app at your own custom server. This choice is saved and can be changed later in Settings.</string>
+    <string name="server_default">Default server</string>
+    <string name="server_default_sub">Use the official suitefish.com catalog.</string>
+    <string name="server_custom">Custom server</string>
+    <string name="server_custom_sub">Connect to your own catalog server.</string>
+    <string name="server_custom_hint" translatable="false">example.com or 203.0.113.10:8443</string>
+    <string name="server_custom_help">HTTPS is required and enforced. Enter a reachable online domain or IP. To use a port other than 443, append :port (e.g. example.com:8443).</string>
+    <string name="onb_accept_risk">I understand and accept the risks</string>
+
+    <!-- Insecure TLS toggle -->
+    <string name="allow_insecure_title">Allow untrusted certificates</string>
+    <string name="allow_insecure_onb">Allow untrusted / self-signed certificates</string>
+    <string name="allow_insecure_sub">Accept self-signed or otherwise untrusted HTTPS certificates. Only enable this for a server you control and trust.</string>
+    <string name="allow_insecure_warn_title">Disable certificate checks?</string>
+    <string name="allow_insecure_warn_body">Turning this on stops Suitefish from verifying the server\'s HTTPS certificate. Traffic can then be intercepted or modified by a man-in-the-middle, exposing you to malware or data leaks. Only enable this for a self-hosted server you fully trust.\n\nEnable anyway?</string>
+    <string name="allow_insecure_enable">Enable</string>
+    <string name="server_continue">Continue</string>
+    <string name="server_invalid">Invalid server. Enter a valid online domain or IP. HTTPS is enforced; only :port may be added.</string>
+    <string name="server_unreachable">Server could not be reached over HTTPS. Check the address and your connection.</string>
+
+    <!-- Store / lists -->
+    <string name="search_hint">Search apps…</string>
+    <string name="btn_sync">Sync catalog</string>
+    <string name="btn_check_updates">Check for updates</string>
+    <string name="filter_all">All categories</string>
+    <string name="badge_installed">Installed</string>
+    <string name="badge_update">Update</string>
+    <string name="empty_store">No apps in the local catalog yet. Tap \"Sync catalog\" to fetch the list from the server.</string>
+    <string name="empty_installed">None of your installed apps come from this Suitefish store, or the catalog has not been synced yet.</string>
+    <string name="empty_search">No apps match your search.</string>
+    <string name="sync_done">Catalog updated: %1$d apps.</string>
+    <string name="sync_offline">Server not reachable. Your last saved catalog was kept.</string>
+    <string name="last_synced">Last synced: %1$s</string>
+    <string name="never">never</string>
+
+    <!-- Detail -->
+    <string name="detail_download">Download &amp; install</string>
+    <string name="detail_update">Update</string>
+    <string name="detail_open_uninstall">Uninstall</string>
+    <string name="detail_version">Version %1$s</string>
+    <string name="detail_installed_version">Installed: %1$s</string>
+    <string name="detail_category">Category: %1$s</string>
+    <string name="detail_package" translatable="false">%1$s</string>
+
+    <string name="install_help_title">Installing apps from untrusted sources</string>
+    <string name="install_help_body">Suitefish installs apps that do not come from Google Play, so Android treats them as coming from an \"unknown source\".\n\nWhen you install an app, Android may ask you to allow installations from Suitefish:\n\n1. When prompted, tap Settings.\n2. Enable \"Allow from this source\" (Install unknown apps) for Suitefish.\n3. Go back and confirm the installation.\n\nYou can revoke this permission at any time under Android Settings &gt; Apps &gt; Special access &gt; Install unknown apps. Only install apps you trust.</string>
+    <string name="install_help_got_it">Got it</string>
+
+    <!-- Update confirmations -->
+    <string name="confirm_online_title">Contact server?</string>
+    <string name="confirm_update_body">To check for updates, Suitefish will contact the online server for the installed Suitefish apps. Continue?</string>
+    <string name="confirm_download_body">Suitefish will now contact the online server and download this app. Continue?</string>
+    <string name="updates_found">%1$d update(s) available.</string>
+    <string name="updates_none">All Suitefish apps are up to date.</string>
+    <string name="download_offline_title">Server not reachable</string>
+    <string name="download_offline_body">Suitefish could not reach the server, so this app could not be downloaded. Your device may be offline or the server may be down. Your saved catalog was kept.</string>
+
+    <!-- Settings -->
+    <string name="settings_server_title">Catalog server</string>
+    <string name="settings_current_server">Current: %1$s</string>
+    <string name="settings_change_server">Change server</string>
+    <string name="settings_change_warning_title">Change server?</string>
+    <string name="settings_change_warning_body">Changing the server will DELETE all locally stored data (catalog, cached images and downloaded files) and restart the app fresh. Your installed apps are not removed. Continue?</string>
+    <string name="settings_wipe_title">Reset local data</string>
+    <string name="settings_wipe_body">Delete the local catalog, cached images and downloaded APKs. The app will restart.</string>
+    <string name="settings_wipe">Reset &amp; restart</string>
+    <string name="settings_data_title">Storage</string>
+    <string name="settings_show_privacy">Show privacy notice</string>
+    <string name="settings_show_risk">Show risk notice</string>
+    <string name="settings_show_install_help">How to install untrusted apps</string>
+
+    <!-- About -->
+    <string name="about_app_title" translatable="false">Suitefish</string>
+    <string name="about_tagline">A free, open-source app store client.</string>
+    <string name="about_version_fmt">Version %1$s</string>
+    <string name="about_body">Suitefish is a community-friendly, open-source client for browsing and installing apps from a Suitefish catalog server. It is provided free of charge, with no ads and no tracking added by the app itself.</string>
+    <string name="about_author_title">Author</string>
+    <string name="about_author_body">Made by Bugfish — \"Dreaming in Digital.\" Bugfish builds across Android, frameworks, JavaScript, games, Windows and web software.</string>
+    <string name="about_website">Website: bugfishtm.github.io</string>
+    <string name="about_website_url" translatable="false">https://bugfishtm.github.io</string>
+    <string name="about_youtube">YouTube: youtube.com/bugfishtm</string>
+    <string name="about_youtube_url" translatable="false">https://youtube.com/bugfishtm</string>
+    <string name="about_repo_title">Open source</string>
+    <string name="about_repo_body">Suitefish is open source. Source code, issues and contributions are welcome on GitHub.</string>
+    <string name="about_repo">GitHub: github.com/bugfishtm/suitefish-android</string>
+    <string name="about_repo_url" translatable="false">https://github.com/bugfishtm/suitefish-android</string>
+    <string name="about_license">Free &amp; open source · Use at your own risk.</string>
+</resources>
