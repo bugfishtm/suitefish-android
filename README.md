@@ -17,6 +17,8 @@ By default the app talks to the official `suitefish.com` catalog, but you can po
 
 This repository holds the full source code, build assets and release artifacts for the Android app.
 
+<img src="./_screenshots/demo.png" style="max-width: 100%;">
+
 ## ✨ Features
 
 - **Store tab** — browse the remote catalog, search by name and filter by category.
