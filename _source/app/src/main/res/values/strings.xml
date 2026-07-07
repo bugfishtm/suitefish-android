@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name" translatable="false">Suitefish</string>
 
     <!-- Tabs -->
@@ -52,7 +52,7 @@
     <string name="empty_store">No apps in the local catalog yet. Tap \"Sync catalog\" to fetch the list from the server.</string>
     <string name="empty_installed">None of your installed apps come from this Suitefish store, or the catalog has not been synced yet.</string>
     <string name="empty_search">No apps match your search.</string>
-    <string name="sync_done">Catalog updated: %1$d apps.</string>
+    <string name="sync_done" tools:ignore="PluralsCandidate">Catalog updated: %1$d apps.</string>
     <string name="sync_offline">Server not reachable. Your last saved catalog was kept.</string>
     <string name="last_synced">Last synced: %1$s</string>
     <string name="never">never</string>
@@ -74,7 +74,7 @@
     <string name="confirm_online_title">Contact server?</string>
     <string name="confirm_update_body">To check for updates, Suitefish will contact the online server for the installed Suitefish apps. Continue?</string>
     <string name="confirm_download_body">Suitefish will now contact the online server and download this app. Continue?</string>
-    <string name="updates_found">%1$d update(s) available.</string>
+    <string name="updates_found" tools:ignore="PluralsCandidate">%1$d update(s) available.</string>
     <string name="updates_none">All Suitefish apps are up to date.</string>
     <string name="download_offline_title">Server not reachable</string>
     <string name="download_offline_body">Suitefish could not reach the server, so this app could not be downloaded. Your device may be offline or the server may be down. Your saved catalog was kept.</string>

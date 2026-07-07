@@ -8,7 +8,7 @@ material = "1.14.0"
 activityKtx = "1.13.0"
 constraintlayout = "2.2.1"
 recyclerview = "1.4.0"
-swiperefreshlayout = "1.1.0"
+swiperefreshlayout = "1.2.0"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }

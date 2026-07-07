@@ -1,23 +1,41 @@
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
+}
+
+// Release signing credentials live in keystore.properties (not checked into git).
+// Without it, release builds fall back to the debug key so they stay installable.
+val keystoreProps = Properties().apply {
+    val f = rootProject.file("keystore.properties")
+    if (f.exists()) f.inputStream().use { load(it) }
 }
 
 android {
     namespace = "com.suitefish.suitefishapk"
     compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
+        version = release(37)
     }
 
     defaultConfig {
         applicationId = "com.suitefish.suitefishapk"
         minSdk = 24
-        targetSdk = 36
-        versionCode = 777
-        versionName = "1.0.1"
+        targetSdk = 37
+        versionCode = 778
+        versionName = "1.0.2"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        if (keystoreProps.isNotEmpty()) {
+            create("release") {
+                storeFile = rootProject.file(keystoreProps.getProperty("storeFile"))
+                storePassword = keystoreProps.getProperty("storePassword")
+                keyAlias = keystoreProps.getProperty("keyAlias")
+                keyPassword = keystoreProps.getProperty("keyPassword")
+            }
+        }
     }
 
     buildTypes {
@@ -25,7 +43,17 @@ android {
             optimization {
                 enable = false
             }
+            signingConfig = if (keystoreProps.isNotEmpty())
+                signingConfigs.getByName("release")
+            else
+                signingConfigs.getByName("debug")
         }
+    }
+
+    lint {
+        // The adaptive-icon background layer is supposed to fill its square;
+        // lint misreads it as a legacy launcher icon.
+        disable += "IconLauncherShape"
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11

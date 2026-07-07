@@ -1,5 +1,6 @@
 package com.suitefish.suitefishapk.ui;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -32,6 +33,8 @@ public class AppListAdapter extends RecyclerView.Adapter<AppListAdapter.VH> {
         this.clickListener = clickListener;
     }
 
+    // The whole list is swapped on every catalog refresh, so a full rebind is intended.
+    @SuppressLint("NotifyDataSetChanged")
     public void setItems(List<AppItem> newItems) {
         items.clear();
         if (newItems != null) items.addAll(newItems);
