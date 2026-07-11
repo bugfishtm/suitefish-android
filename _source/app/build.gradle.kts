@@ -21,8 +21,8 @@ android {
         applicationId = "com.suitefish.suitefishapk"
         minSdk = 24
         targetSdk = 37
-        versionCode = 778
-        versionName = "1.0.2"
+        versionCode = 779
+        versionName = "1.0.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }

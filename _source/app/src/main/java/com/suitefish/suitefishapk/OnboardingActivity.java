@@ -10,6 +10,9 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.checkbox.MaterialCheckBox;
@@ -53,6 +56,14 @@ public class OnboardingActivity extends AppCompatActivity {
         }
 
         setContentView(R.layout.activity_onboarding);
+
+        // Edge-to-edge (enforced from targetSdk 35): keep content out of the system bars.
+        View root = findViewById(R.id.onb_root);
+        ViewCompat.setOnApplyWindowInsetsListener(root, (v, insets) -> {
+            Insets bars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(bars.left, bars.top, bars.right, bars.bottom);
+            return insets;
+        });
 
         acceptRisk = findViewById(R.id.onb_accept_risk);
         radioDefault = findViewById(R.id.onb_radio_default);

@@ -1,22 +1,43 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Suitefish forces a dark, orange-accented look regardless of system setting. -->
+    <!-- Suitefish forces a dark graphite, neon-orange look regardless of system setting. -->
     <style name="Base.Theme.Suitefish" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Neon orange core -->
         <item name="colorPrimary">@color/orange_primary</item>
         <item name="colorOnPrimary">@color/black</item>
-        <item name="colorPrimaryContainer">@color/orange_primary_dark</item>
-        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorPrimaryContainer">@color/orange_container</item>
+        <item name="colorOnPrimaryContainer">@color/orange_container_on</item>
         <item name="colorSecondary">@color/orange_accent</item>
         <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryContainer">@color/surface_highest</item>
+        <item name="colorOnSecondaryContainer">@color/orange_accent</item>
+        <item name="colorTertiary">@color/orange_accent</item>
+        <item name="colorOnTertiary">@color/black</item>
+        <item name="colorTertiaryContainer">@color/orange_container</item>
+        <item name="colorOnTertiaryContainer">@color/orange_container_on</item>
 
+        <!-- Neutral graphite surfaces; the container ramp keeps Material widgets
+             (dialogs, tonal buttons, switch tracks) on grey instead of the
+             purple-tinted Material3 defaults. -->
         <item name="android:colorBackground">@color/bg</item>
         <item name="android:windowBackground">@color/bg</item>
         <item name="colorSurface">@color/surface</item>
         <item name="colorSurfaceVariant">@color/surface_variant</item>
+        <item name="colorSurfaceContainerLowest">@color/bg</item>
+        <item name="colorSurfaceContainerLow">@color/surface</item>
+        <item name="colorSurfaceContainer">@color/surface_variant</item>
+        <item name="colorSurfaceContainerHigh">@color/surface_high</item>
+        <item name="colorSurfaceContainerHighest">@color/surface_highest</item>
+        <item name="colorSurfaceDim">@color/bg</item>
+        <item name="colorSurfaceBright">@color/surface_highest</item>
         <item name="colorOnBackground">@color/text_primary</item>
         <item name="colorOnSurface">@color/text_primary</item>
         <item name="colorOnSurfaceVariant">@color/text_secondary</item>
         <item name="colorOutline">@color/stroke</item>
+        <item name="colorOutlineVariant">@color/surface_highest</item>
+
+        <item name="colorError">@color/danger</item>
+        <item name="colorOnError">@color/black</item>
 
         <item name="android:statusBarColor">@color/bg</item>
         <item name="android:navigationBarColor">@color/bg</item>

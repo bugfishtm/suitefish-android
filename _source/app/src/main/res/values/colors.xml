@@ -3,21 +3,24 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <!-- Dark burnt-orange accents -->
-    <color name="orange_primary">#E06414</color>
-    <color name="orange_primary_dark">#A8480C</color>
-    <color name="orange_accent">#EF8A3C</color>
+    <!-- Neon orange accents (matches the launcher artwork) -->
+    <color name="orange_primary">#FFFF6B00</color>
+    <color name="orange_accent">#FFFF9133</color>
+    <color name="orange_container">#FF7A3400</color>
+    <color name="orange_container_on">#FFFFDBC7</color>
 
-    <!-- Greyish dark surfaces (slightly cool-tinted) -->
-    <color name="bg">#FF17181B</color>
-    <color name="surface">#FF212327</color>
-    <color name="surface_variant">#FF2C2F34</color>
-    <color name="stroke">#FF43474E</color>
+    <!-- Neutral graphite surfaces (no blue/purple cast) -->
+    <color name="bg">#FF161616</color>
+    <color name="surface">#FF1F1F1F</color>
+    <color name="surface_variant">#FF2A2A2A</color>
+    <color name="surface_high">#FF2E2E2E</color>
+    <color name="surface_highest">#FF343434</color>
+    <color name="stroke">#FF3E3E3E</color>
 
-    <color name="text_primary">#FFE6E8EB</color>
-    <color name="text_secondary">#FFA9AEB6</color>
+    <color name="text_primary">#FFF2F2F2</color>
+    <color name="text_secondary">#FFAAAAAA</color>
 
     <color name="badge_installed">#FF2E7D32</color>
-    <color name="badge_update">#FFE06414</color>
-    <color name="danger">#FFE53935</color>
+    <color name="badge_update">#FFFF6B00</color>
+    <color name="danger">#FFFF5449</color>
 </resources>
