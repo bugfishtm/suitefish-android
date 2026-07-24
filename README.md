@@ -1,7 +1,7 @@
 # Suitefish Android App
 
 > [!TIP]
-> This tool is actively maintained as a private scientific utility. Feature requests and bug reports are welcome via GitHub Issues and will be reviewed within 1–3 weeks.
+> No new features are currently planned for this project. However, users are welcome to create issues or feature requests, which will be reviewed and responded to within 1–3 weeks.
 
 <img src="./_images/_language/de.png" width="25" height="20"> <img src="./_images/_language/en.png" width="25" height="20"> <img src="./_images/_language/es.png" width="25" height="20"> <img src="./_images/_language/fr.png" width="25" height="20"> <img src="./_images/_language/in.png" width="25" height="20"> <img src="./_images/_language/it.png" width="25" height="20"> <img src="./_images/_language/ja.png" width="25" height="20"> <img src="./_images/_language/kr.png" width="25" height="20"> <img src="./_images/_language/pt.png" width="25" height="20"> <img src="./_images/_language/ru.png" width="25" height="20"> <img src="./_images/_language/tr.png" width="25" height="20"> <img src="./_images/_language/zh.png" width="25" height="20"> 
 
